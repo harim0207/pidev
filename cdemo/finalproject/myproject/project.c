@@ -119,6 +119,17 @@ if (foundSquare2 ==1 && foundPrime2 ==0)
    printf("%d is a perfect square and not prime\n", e);
 }
 
+
+int i,gcd=1;
+
+    for(i=1; i <= b && i <= e; ++i)
+    {
+        if(b%i==0 && e%i==0)
+            gcd = i;  
+  }
+printf("\nGCD of %d and %d is : %d\n\n", b, e, gcd); 
+
+
 return 0;
 
 }
